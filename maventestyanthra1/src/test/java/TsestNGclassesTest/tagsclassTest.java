@@ -12,47 +12,52 @@ import org.testng.annotations.Test;
 
 public class tagsclassTest {
 	
-	@Test
+	@Test(groups = "smoke")
 	public void demo() {
 	System.out.println("Test execution");
 	}
-	@BeforeSuite
+	
+	@Test(groups = "integration")
+	public void demo1() {
+	System.out.println("Test executio1n");
+	}
+	@BeforeSuite(groups = {"smoke", "integration"})
 	public void beforesuit()
 	{
 		System.out.println("@BeforeSuite");
 	}
 	
-	@AfterSuite
+	@AfterSuite(groups = {"smoke", "integration"})
 	public void aftersuit() {
 		System.out.println("@AfterSuite");
 	}
 	
-	@BeforeClass()
+	@BeforeClass(groups = {"smoke", "integration"})
 	public void bc() {
 		System.out.println("@BeforeClass");
 	}
 	
-	@AfterClass
+	@AfterClass(groups = {"smoke", "integration"})
 	public void ac() {
 		System.out.println("@AfterClass");
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(groups = {"smoke", "integration"})
 	public void bm() {
 		System.out.println("@BeforeMethod");
 	}
 	
-	@AfterMethod
+	@AfterMethod(groups = {"smoke", "integration"})
 	public void am() {
 		System.out.println("@AfterMethod");
 	}
 	
-	@BeforeTest
+	@BeforeTest(groups = {"smoke", "integration"})
 	public void bt() {
 		System.out.println("@BeforeTest");
 	}
 	
-	@AfterTest
+	@AfterTest(groups = {"smoke", "integration"})
 	public void at() {
 		System.out.println("@AfterTest");
 	}

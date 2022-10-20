@@ -1,34 +1,40 @@
 package TsestNGclassesTest;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class parameterTest {
+public class parameterTest{
 	
-	@Parameters("Raj")
+
+	WebDriver driver;
+
+	
 	@Test
-	public void passparameter(String browser)
+	@Parameters("tyss")
+	public void launchbrowser(String browser)
 	{
-		//ChromeDriver driver = null;
-		if(browser.equals("Chrome")) 
-				{
-			WebDriverManager.chromedriver().setup();
-		    driver=new ChromeDriver();
-			//System.out.println(browser);
-			
-				}
-		//if(browser.equals("firefox"))
-		// {
-		//	WebDriverManager.firefoxdriver().setup();
-		//	driver = new FirefoxDriver();
-		//}
 		
+		if(browser.equals("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			 driver = new ChromeDriver();
+		}
+		if(browser.equals("firefox"))
+		 {
+			WebDriverManager.firefoxdriver().setup();
+			 driver = new FirefoxDriver();
+		}
 		else {
 			System.out.println("Invalid respone");
 		}
 		driver.get("https://facebook.com");
-			}
+		
+		
+		
+	}
 }

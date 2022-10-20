@@ -103,7 +103,7 @@
 		</profile>
 	
 		<profile>
-			<id>Regression</id>
+			<id>regression</id>
 			<build>
 				<plugins>
 					<plugin>

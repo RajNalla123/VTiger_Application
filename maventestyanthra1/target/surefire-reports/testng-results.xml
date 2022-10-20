@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-20T14:14:20Z" name="Suite" finished-at="2022-10-20T14:16:22Z" duration-ms="122352">
+    <groups>
+      <group name="smoke">
+        <method signature="BaseTestimplimentsOrg1Test.Createorg()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg1Test@49c66ade]" name="Createorg" class="TsestNGclassesTest.BaseTestimplimentsOrg1Test"/>
+        <method signature="BaseTestimplimentsOrg2Test.OrgwithIndustype()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg2Test@6239aba6]" name="OrgwithIndustype" class="TsestNGclassesTest.BaseTestimplimentsOrg2Test"/>
+        <method signature="BasetestimpwithcontactsOrg3Test.OrgwithConType()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@3e6104fc]" name="OrgwithConType" class="TsestNGclassesTest.BasetestimpwithcontactsOrg3Test"/>
+      </group> <!-- smoke -->
+      <group name="Regression">
+        <method signature="BaseTestimplimentsOrg1Test.Createorg()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg1Test@49c66ade]" name="Createorg" class="TsestNGclassesTest.BaseTestimplimentsOrg1Test"/>
+        <method signature="BaseTestimplimentsOrg2Test.OrgwithIndustype()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg2Test@6239aba6]" name="OrgwithIndustype" class="TsestNGclassesTest.BaseTestimplimentsOrg2Test"/>
+        <method signature="BasetestimpwithcontactsOrg3Test.OrgwithConType()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@3e6104fc]" name="OrgwithConType" class="TsestNGclassesTest.BasetestimpwithcontactsOrg3Test"/>
+      </group> <!-- Regression -->
+      <group name="integration">
+        <method signature="BaseTestimplimentsOrg1Test.Createorg()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg1Test@49c66ade]" name="Createorg" class="TsestNGclassesTest.BaseTestimplimentsOrg1Test"/>
+        <method signature="BaseTestimplimentsOrg2Test.OrgwithIndustype()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg2Test@6239aba6]" name="OrgwithIndustype" class="TsestNGclassesTest.BaseTestimplimentsOrg2Test"/>
+        <method signature="BasetestimpwithcontactsOrg3Test.OrgwithConType()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@3e6104fc]" name="OrgwithConType" class="TsestNGclassesTest.BasetestimpwithcontactsOrg3Test"/>
+      </group> <!-- integration -->
+    </groups>
+    <test started-at="2022-10-20T14:14:20Z" name="Test" finished-at="2022-10-20T14:16:22Z" duration-ms="122352">
+      <class name="TsestNGclassesTest.BaseTestimplimentsOrg2Test">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg2Test@6239aba6]" started-at="2022-10-20T14:15:13Z" name="launchbrowser" finished-at="2022-10-20T14:15:17Z" duration-ms="3971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg2Test@6239aba6]" started-at="2022-10-20T14:15:17Z" name="login" finished-at="2022-10-20T14:15:22Z" duration-ms="4656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="OrgwithIndustype()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg2Test@6239aba6]" started-at="2022-10-20T14:15:22Z" name="OrgwithIndustype" finished-at="2022-10-20T14:15:40Z" duration-ms="18272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrgwithIndustype -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg2Test@6239aba6]" started-at="2022-10-20T14:15:40Z" name="logout" finished-at="2022-10-20T14:15:42Z" duration-ms="2361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg2Test@6239aba6]" started-at="2022-10-20T14:15:42Z" name="closebrowser" finished-at="2022-10-20T14:15:42Z" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- TsestNGclassesTest.BaseTestimplimentsOrg2Test -->
+      <class name="TsestNGclassesTest.BasetestimpwithcontactsOrg3Test">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@3e6104fc]" started-at="2022-10-20T14:15:42Z" name="launchbrowser" finished-at="2022-10-20T14:15:46Z" duration-ms="3879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@3e6104fc]" started-at="2022-10-20T14:15:46Z" name="login" finished-at="2022-10-20T14:15:52Z" duration-ms="5665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="OrgwithConType()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@3e6104fc]" started-at="2022-10-20T14:15:52Z" name="OrgwithConType" finished-at="2022-10-20T14:16:19Z" duration-ms="27146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrgwithConType -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@3e6104fc]" started-at="2022-10-20T14:16:19Z" name="logout" finished-at="2022-10-20T14:16:22Z" duration-ms="2502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@3e6104fc]" started-at="2022-10-20T14:16:22Z" name="closebrowser" finished-at="2022-10-20T14:16:22Z" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- TsestNGclassesTest.BasetestimpwithcontactsOrg3Test -->
+      <class name="TsestNGclassesTest.BaseTestimplimentsOrg1Test">
+        <test-method is-config="true" signature="connectingdatabase()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg1Test@49c66ade]" started-at="2022-10-20T14:14:19Z" name="connectingdatabase" finished-at="2022-10-20T14:14:20Z" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectingdatabase -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg1Test@49c66ade]" started-at="2022-10-20T14:14:20Z" name="launchbrowser" finished-at="2022-10-20T14:14:32Z" duration-ms="12328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg1Test@49c66ade]" started-at="2022-10-20T14:14:32Z" name="login" finished-at="2022-10-20T14:14:40Z" duration-ms="8563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="Createorg()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg1Test@49c66ade]" started-at="2022-10-20T14:14:40Z" name="Createorg" finished-at="2022-10-20T14:15:05Z" duration-ms="24748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Createorg -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg1Test@49c66ade]" started-at="2022-10-20T14:15:05Z" name="logout" finished-at="2022-10-20T14:15:13Z" duration-ms="7511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg1Test@49c66ade]" started-at="2022-10-20T14:15:13Z" name="closebrowser" finished-at="2022-10-20T14:15:13Z" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="Disconnectingdatabase()[pri:0, instance:TsestNGclassesTest.BaseTestimplimentsOrg1Test@49c66ade]" started-at="2022-10-20T14:16:22Z" name="Disconnectingdatabase" finished-at="2022-10-20T14:16:22Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Disconnectingdatabase -->
+      </class> <!-- TsestNGclassesTest.BaseTestimplimentsOrg1Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
