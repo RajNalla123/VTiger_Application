@@ -21,6 +21,7 @@ public class tagsclassTest {
 	public void demo1() {
 	System.out.println("Test executio1n");
 	}
+	
 	@BeforeSuite(groups = {"smoke", "integration"})
 	public void beforesuit()
 	{

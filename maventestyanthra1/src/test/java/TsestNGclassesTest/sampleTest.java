@@ -17,7 +17,7 @@ public class sampleTest extends AnnotationsTest
 		System.out.println("Test execution2");
 		}
 	
-		@Test(groups = "integression")
+		@Test(groups = "integration")
 		public void integression() {
 		System.out.println("Test execution3");
 		}

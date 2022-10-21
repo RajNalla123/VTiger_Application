@@ -12,6 +12,8 @@
 	<test thread-count="5" name="Test">
 		<classes>
 			<class name="TsestNGclassesTest.sampleTest" />
+			<class name="TsestNGclassesTest.tagsclassTest"/>
+			<class name="TsestNGclassesTest.BaseTestimplimentsOrg1Test"/>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
