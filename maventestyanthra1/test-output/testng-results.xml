@@ -1,96 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-21T09:47:15 IST" name="Suite" finished-at="2022-10-21T09:47:51 IST" duration-ms="35120">
+  <suite started-at="2022-10-21T13:22:06 IST" name="Default suite" finished-at="2022-10-21T13:22:16 IST" duration-ms="9381">
     <groups>
-      <group name="integration">
-        <method signature="BasetestimpwithcontactsOrg3Test.OrgwithConType()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@55a147cc]" name="OrgwithConType" class="TsestNGclassesTest.BasetestimpwithcontactsOrg3Test"/>
-        <method signature="sampleTest.integression()[pri:0, instance:TsestNGclassesTest.sampleTest@368247b9]" name="integression" class="TsestNGclassesTest.sampleTest"/>
-        <method signature="tagsclassTest.demo1()[pri:0, instance:TsestNGclassesTest.tagsclassTest@45099dd3]" name="demo1" class="TsestNGclassesTest.tagsclassTest"/>
-      </group> <!-- integration -->
-      <group name="Regression">
-        <method signature="BasetestimpwithcontactsOrg3Test.OrgwithConType()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@55a147cc]" name="OrgwithConType" class="TsestNGclassesTest.BasetestimpwithcontactsOrg3Test"/>
-      </group> <!-- Regression -->
-      <group name="smoke">
-        <method signature="BasetestimpwithcontactsOrg3Test.OrgwithConType()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@55a147cc]" name="OrgwithConType" class="TsestNGclassesTest.BasetestimpwithcontactsOrg3Test"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-10-21T09:47:15 IST" name="Test" finished-at="2022-10-21T09:47:51 IST" duration-ms="35120">
-      <class name="TsestNGclassesTest.sampleTest">
-        <test-method signature="integression()[pri:0, instance:TsestNGclassesTest.sampleTest@368247b9]" started-at="2022-10-21T09:47:15 IST" name="integression" finished-at="2022-10-21T09:47:16 IST" duration-ms="3" status="PASS">
+    <test started-at="2022-10-21T13:22:06 IST" name="Default test" finished-at="2022-10-21T13:22:16 IST" duration-ms="9381">
+      <class name="TsestNGclassesTest.ChromeOptionsclassTest">
+        <test-method signature="chromeopt()[pri:0, instance:TsestNGclassesTest.ChromeOptionsclassTest@4fb3ee4e]" started-at="2022-10-21T13:22:06 IST" name="chromeopt" finished-at="2022-10-21T13:22:16 IST" duration-ms="9317" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- integression -->
-      </class> <!-- TsestNGclassesTest.sampleTest -->
-      <class name="TsestNGclassesTest.BasetestimpwithcontactsOrg3Test">
-        <test-method is-config="true" signature="connectingdatabase()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@55a147cc]" started-at="2022-10-21T09:47:15 IST" name="connectingdatabase" finished-at="2022-10-21T09:47:15 IST" duration-ms="12" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- connectingdatabase -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@55a147cc]" started-at="2022-10-21T09:47:16 IST" name="launchbrowser" finished-at="2022-10-21T09:47:22 IST" duration-ms="6051" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@55a147cc]" started-at="2022-10-21T09:47:22 IST" name="login" finished-at="2022-10-21T09:47:26 IST" duration-ms="3950" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="OrgwithConType()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@55a147cc]" started-at="2022-10-21T09:47:26 IST" name="OrgwithConType" finished-at="2022-10-21T09:47:47 IST" duration-ms="21316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OrgwithConType -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@55a147cc]" started-at="2022-10-21T09:47:47 IST" name="logout" finished-at="2022-10-21T09:47:49 IST" duration-ms="2174" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@55a147cc]" started-at="2022-10-21T09:47:49 IST" name="closebrowser" finished-at="2022-10-21T09:47:51 IST" duration-ms="1515" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="Disconnectingdatabase()[pri:0, instance:TsestNGclassesTest.BasetestimpwithcontactsOrg3Test@55a147cc]" started-at="2022-10-21T09:47:51 IST" name="Disconnectingdatabase" finished-at="2022-10-21T09:47:51 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Disconnectingdatabase -->
-      </class> <!-- TsestNGclassesTest.BasetestimpwithcontactsOrg3Test -->
-      <class name="TsestNGclassesTest.tagsclassTest">
-        <test-method is-config="true" signature="beforesuit()[pri:0, instance:TsestNGclassesTest.tagsclassTest@45099dd3]" started-at="2022-10-21T09:47:15 IST" name="beforesuit" finished-at="2022-10-21T09:47:15 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforesuit -->
-        <test-method is-config="true" signature="bt()[pri:0, instance:TsestNGclassesTest.tagsclassTest@45099dd3]" started-at="2022-10-21T09:47:15 IST" name="bt" finished-at="2022-10-21T09:47:15 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bt -->
-        <test-method is-config="true" signature="bc()[pri:0, instance:TsestNGclassesTest.tagsclassTest@45099dd3]" started-at="2022-10-21T09:47:15 IST" name="bc" finished-at="2022-10-21T09:47:15 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bc -->
-        <test-method is-config="true" signature="bm()[pri:0, instance:TsestNGclassesTest.tagsclassTest@45099dd3]" started-at="2022-10-21T09:47:15 IST" name="bm" finished-at="2022-10-21T09:47:15 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bm -->
-        <test-method signature="demo1()[pri:0, instance:TsestNGclassesTest.tagsclassTest@45099dd3]" started-at="2022-10-21T09:47:15 IST" name="demo1" finished-at="2022-10-21T09:47:15 IST" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demo1 -->
-        <test-method is-config="true" signature="am()[pri:0, instance:TsestNGclassesTest.tagsclassTest@45099dd3]" started-at="2022-10-21T09:47:15 IST" name="am" finished-at="2022-10-21T09:47:15 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- am -->
-        <test-method is-config="true" signature="ac()[pri:0, instance:TsestNGclassesTest.tagsclassTest@45099dd3]" started-at="2022-10-21T09:47:15 IST" name="ac" finished-at="2022-10-21T09:47:15 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ac -->
-        <test-method is-config="true" signature="at()[pri:0, instance:TsestNGclassesTest.tagsclassTest@45099dd3]" started-at="2022-10-21T09:47:51 IST" name="at" finished-at="2022-10-21T09:47:51 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- at -->
-        <test-method is-config="true" signature="aftersuit()[pri:0, instance:TsestNGclassesTest.tagsclassTest@45099dd3]" started-at="2022-10-21T09:47:51 IST" name="aftersuit" finished-at="2022-10-21T09:47:51 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftersuit -->
-      </class> <!-- TsestNGclassesTest.tagsclassTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- chromeopt -->
+      </class> <!-- TsestNGclassesTest.ChromeOptionsclassTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
