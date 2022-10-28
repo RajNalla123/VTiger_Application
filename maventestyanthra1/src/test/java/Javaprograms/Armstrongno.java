@@ -5,7 +5,7 @@ public class Armstrongno {
 	public static void main(String[] args) {
 		int num=153;
 		int sum=0,rem=0,temp=0;
-		while (num!=0)
+		while (num>0)
 		{
 			rem=num%10;
 			sum=sum+(rem*rem*rem);
