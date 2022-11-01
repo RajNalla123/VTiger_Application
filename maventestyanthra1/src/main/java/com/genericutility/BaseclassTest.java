@@ -1,6 +1,11 @@
 package com.genericutility;
 
+import java.io.File;
+import java.io.IOException;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,7 +15,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Listeners;
+import com.google.common.io.Files;
 
 import Objectrepository.Loginpageclass;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -93,4 +98,22 @@ public class BaseclassTest {
 		//hpc.signOut(driver);
 
 	}
+	
+	public static  String takescreenshot(String name)
+	{
+		TakesScreenshot sh = (TakesScreenshot)BaseclassTest.sdriver;
+		File src = sh.getScreenshotAs(OutputType.FILE);
+		
+		String path= "./Screenshot/\"+name+\".PNG";
+		File dest=new File(path);
+		try {
+			Files.copy(src, dest);
+		} catch (IOException e) {
+		
+			e.printStackTrace();
+		}
+		
+		return path;
+	}
+	
 }

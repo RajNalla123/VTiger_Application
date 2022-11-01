@@ -1,28 +1,39 @@
 package com.genericutility;
 
-import java.io.File;
-import java.io.IOException;
-
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.google.common.io.Files;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class Listenersclassutility implements ITestListener 
 {
-
+    ExtentTest test;
+    ExtentReports reports;
 	
 	public void onFinish(ITestContext result) {
-		
+		reports.flush();
 		
 	}
 
 	
 	public void onStart(ITestContext result) {
 		
+		ExtentSparkReporter reporter = new ExtentSparkReporter("./ExtentReports/Vtiger.html");
+		reporter.config().setDocumentTitle("V-TIGER");
+		reporter.config().setTheme(Theme.STANDARD);
+
+		reports = new ExtentReports();
+		reports.attachReporter(reporter);
+
+		reports.setSystemInfo("Browser", "Chrome");
+		reports.setSystemInfo("Build", "10.3.5");
+		reports.setSystemInfo("Reporter Name", "Pavan");
+		reports.setSystemInfo("Env", "QA");
 		
 	}
 
@@ -34,32 +45,28 @@ public class Listenersclassutility implements ITestListener
 
 	
 	public void onTestFailure(ITestResult result) {
-		TakesScreenshot sh = (TakesScreenshot)BaseclassTest.sdriver;
-		File src = sh.getScreenshotAs(OutputType.FILE);
-		File dest=new File("./Screenshot/\"+result.getMethod().getMethodName()+\".PNG");
-		try {
-			Files.copy(src, dest);
-		} catch (IOException e) {
-		
-			e.printStackTrace();
-		}
+		String path = BaseclassTest.takescreenshot(result.getMethod().getMethodName());
+		test.log(Status.FAIL, result.getMethod().getMethodName()+ " got Failed" );
+		test.log(Status.FAIL, result.getThrowable());
+
+		test.addScreenCaptureFromPath(path);
 		
 	}
 
 
 	public void onTestSkipped(ITestResult result) {
-				
+		test.log(Status.SKIP, result.getMethod().getMethodName()+ " got Skipped" );		
 	}
 
 
 	public void onTestStart(ITestResult result) {
-				
+		test=reports.createTest(result.getMethod().getMethodName());			
 	}
 
 	
 	public void onTestSuccess(ITestResult result) {
 		
-		
+		test.log(Status.PASS, result.getMethod().getMethodName()+ " got passed");
 	}
 	
 	
