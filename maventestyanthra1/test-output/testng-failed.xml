@@ -1,13 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="TsestNGclassesTest.ListenersclassTest"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.rmgyantra_ExtentReport.ExtentreportTest">
+      <class name="TsestNGclassesTest.BaseTestimplimentsOrg2Test">
         <methods>
-          <include name="createreport"/>
+          <include name="login"/>
+          <include name="closebrowser"/>
+          <include name="connectingdatabase"/>
+          <include name="OrgwithIndustype"/>
+          <include name="Disconnectingdatabase"/>
+          <include name="logout"/>
+          <include name="launchbrowser"/>
         </methods>
-      </class> <!-- com.rmgyantra_ExtentReport.ExtentreportTest -->
+      </class> <!-- TsestNGclassesTest.BaseTestimplimentsOrg2Test -->
+      <class name="TsestNGclassesTest.BasetestimpwithcontactsOrg3Test">
+        <methods>
+          <include name="login"/>
+          <include name="closebrowser"/>
+          <include name="connectingdatabase"/>
+          <include name="OrgwithConType"/>
+          <include name="Disconnectingdatabase"/>
+          <include name="logout"/>
+          <include name="launchbrowser"/>
+        </methods>
+      </class> <!-- TsestNGclassesTest.BasetestimpwithcontactsOrg3Test -->
+      <class name="TsestNGclassesTest.BaseTestimplimentsOrg1Test">
+        <methods>
+          <include name="login"/>
+          <include name="closebrowser"/>
+          <include name="connectingdatabase"/>
+          <include name="Disconnectingdatabase"/>
+          <include name="logout"/>
+          <include name="launchbrowser"/>
+          <include name="Createorg"/>
+        </methods>
+      </class> <!-- TsestNGclassesTest.BaseTestimplimentsOrg1Test -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

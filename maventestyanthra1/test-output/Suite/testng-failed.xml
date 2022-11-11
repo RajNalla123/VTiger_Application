@@ -5,13 +5,45 @@
     <listener class-name="TsestNGclassesTest.ListenersclassTest"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="TsestNGclassesTest.AmazonTest">
+      <class name="TsestNGclassesTest.BaseTestimplimentsOrg2Test">
         <methods>
-          <include name="flipkart"/>
-          <include name="amazon"/>
+          <include name="login"/>
+          <include name="closebrowser"/>
+          <include name="connectingdatabase"/>
+          <include name="OrgwithIndustype"/>
+          <include name="Disconnectingdatabase"/>
+          <include name="logout"/>
+          <include name="launchbrowser"/>
         </methods>
-      </class> <!-- TsestNGclassesTest.AmazonTest -->
+      </class> <!-- TsestNGclassesTest.BaseTestimplimentsOrg2Test -->
+      <class name="TsestNGclassesTest.BasetestimpwithcontactsOrg3Test">
+        <methods>
+          <include name="login"/>
+          <include name="closebrowser"/>
+          <include name="connectingdatabase"/>
+          <include name="OrgwithConType"/>
+          <include name="Disconnectingdatabase"/>
+          <include name="logout"/>
+          <include name="launchbrowser"/>
+        </methods>
+      </class> <!-- TsestNGclassesTest.BasetestimpwithcontactsOrg3Test -->
+      <class name="TsestNGclassesTest.BaseTestimplimentsOrg1Test">
+        <methods>
+          <include name="login"/>
+          <include name="closebrowser"/>
+          <include name="connectingdatabase"/>
+          <include name="Disconnectingdatabase"/>
+          <include name="logout"/>
+          <include name="launchbrowser"/>
+          <include name="Createorg"/>
+        </methods>
+      </class> <!-- TsestNGclassesTest.BaseTestimplimentsOrg1Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
